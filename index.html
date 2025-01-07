@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <ul>
+       <p>Welcome to my projects website!</p>
+      </ul>
+    </header>
+    
+    <sidebar><p className="home-info">
+        Hi! My name is Matthew LeBar, and I am a Master's Student in Computer Science at the University of Chicago, where I am focusing on Machine Learning and Data Analytics, as well as training my computer science fundamentals. Before I started at UChicago, I spent some time learning software development skills on my own. This website provides a directory of some of the projects I'm most proud of from that time, including a machine learning project ("Spirit GPT") I developed by following an online tutorial, as well as several JavaScript projects I worked on through <a href="https://www.theodinproject.com/about">The Odin Project</a>.
+      </p></sidebar>
+    <!-- I constructed the cards in the HTML since there is just such a large amount of content... easier than adding them in with /src/proj.js, at least for the time being. As I add more projects I may change this-->
+    <main class="cards">
+        <div class="card">
+        <h3>Odin-Book</h3>
+        <a href="https://odin-book-project-production-a981.up.railway.app/"
+          ><img src="./book.png" alt="screenshot of odin book project"
+        /></a>
+        <a href="https://odin-book-project-production-a981.up.railway.app/">Webpage</a>
+        <a href="https://github.com/mjlebar/Odin-Book-Project">Codebase</a>
+        <p class="dec">
+            Built with Node, Express, and MongoDB. This was a complicated project with a lot of moving parts - using Faker.js to populate with fake data, using Passport.js and Bcrypt.js to authenticate login information. I'm proud of how it all came together!
+        </p>
+      </div><div class="card">
+        <h3>Spirit-GPT</h3>
+        <a href="https://github.com/mjlebar/spiritGPT/tree/main"
+          ><img src="./spirit.png" alt="screenshot of spirit GPT project"
+        /></a>
+        <a href="https://github.com/mjlebar/spiritGPT/tree/main">Codebase</a>
+        <p class="dec">
+            A machine learning project, replicating the style of 19th century german philosopher Hegel's writing by following a tutorial by Andrej Karpathy (see README for the link to the tutorial). After a few runs on  google colab I got a nice, if not entirely intelligible result.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Zoo Shop</h3>
+        <a href="https://mjlebar.github.io/shopping-cart/"
+          ><img src="./zooshop.png" alt="screenshot of zoo shop project"
+        /></a>
+        <a href="https://mjlebar.github.io/shopping-cart/">Webpage</a>
+        <a href="https://github.com/mjlebar/shopping-cart">Codebase</a>
+        <p class="dec">
+            Built with React Router (like this website!). In this one, I focused on clean, simple design and an easy-to-understand UI. I used lazy-loading to help speed up the page.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Memory Card</h3>
+        <a href="https://mjlebar.github.io/memory-card-project/"
+          ><img src="./memory.png" alt="screenshot of memory card project"
+        /></a>
+        <a href="https://mjlebar.github.io/memory-card-project/">Webpage</a>
+        <a href="https://github.com/mjlebar/memory-card-project">Codebase</a>
+        <p class="dec">
+            This is my second project built in React. This is just a fun, simple game, and it was a great chance to practice React and sharpen my eye for design.
+        </p>
+      </div>
+      <div class="card">
+        <h3>CV Project</h3>
+        <a href="https://mjlebar.github.io/cv-Project/"
+          ><img src="./todo.png" alt="screenshot of CV project"
+        /></a>
+        <a href="https://mjlebar.github.io/cv-Project/">Webpage</a>
+        <a href="https://github.com/mjlebar/cv-Project/">Codebase</a>
+        <p class="dec">
+            This was my first project in React, and a complex one behind the scenes. My focus was on making sure everything functioned exactly as it should - it was difficult to develop code flexible enough to accomodate all the possible inputs (since you could have any number of degrees or jobs), while rigid enough to provide them the right formatting. I'm proud of how it works but hope to give it a nicer design at some point.
+        </p>
+      </div>
+      <div class="card">
+        <h3>To Do List</h3>
+        <a href="https://mjlebar.github.io/todo-project/"
+          ><img src="./todo.png" alt="screenshot of to do list project"
+        /></a>
+        <a href="https://mjlebar.github.io/todo-project/">Webpage</a>
+        <a href="https://github.com/mjlebar/todo-project">Codebase</a>
+        <p class="dec">
+          This is a slightly more complex project - I put this one together with
+          webpack. Took some effort to figure out how to get that to work with
+          github but mission accomplished! Allows for adding and editing todos
+          or projects, and stores everything in local storage (though I am not
+          sure that aspect works with GitHub).
+        </p>
+      </div>
+      <div class="card hidden">
+        <h3>Tic-Tac-Toe</h3>
+        <a href="https://mjlebar.github.io/tic-tac-toe-project/"
+          ><img src="./tic-tac-toe.png" alt="screenshot of tic-tac-toe project"
+        /></a>
+        <a href="https://mjlebar.github.io/tic-tac-toe-project/">Webpage</a>
+        <a href="https://github.com/mjlebar/tic-tac-toe-project">Codebase</a>
+        <p class="dec">
+          This was a tic-tac-toe game I developed in JavaScript. Right now you
+          can play against another player (or yourself). I'm planning to come
+          back and add a CPU at some point!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Etch-A-Sketch</h3>
+        <a href="https://mjlebar.github.io/etch-a-sketch/"
+          ><img src="./etch.png" alt="screenshot of etch-a-sketch project"
+        /></a>
+        <a href="https://mjlebar.github.io/etch-a-sketch/">Webpage</a>
+        <a href="https://github.com/mjlebar/etch-a-sketch">Codebase</a>
+        <p class="dec">
+          A fairly simple but fun JavaScript project - an etch-a-sketch that
+          allows you to recreate the grid in any size you'd like.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Calculator</h3>
+        <a href="https://mjlebar.github.io/Calculator/"
+          ><img src="./calc.png" alt="screenshot of Calculator project"
+        /></a>
+        <a href="https://mjlebar.github.io/Calculator/">Webpage</a>
+        <a href="https://github.com/mjlebar/Calculator">Codebase</a>
+        <p class="dec">
+          A calculator also developed in JavaScript. The main functionality
+          isn't super complicated, but there are a decent number of possible
+          cases you have to look out for (what if operations are chained? what
+          if the number is too long for the calculator? Etc.).
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
