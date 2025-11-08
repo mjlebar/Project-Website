@@ -11,122 +11,107 @@
   <body>
     <header>
       <ul>
-       <p>Welcome to my projects website!</p>
+       <p>Welcome to my portfolio!</p>
       </ul>
     </header>
     
     <sidebar><p className="home-info">
-        Hi! My name is Matthew LeBar, and I am a Master's Student in Computer Science at the University of Chicago, where I am focusing on Machine Learning and Data Analytics, as well as training my computer science fundamentals. Before I started at UChicago, I spent some time learning software development skills on my own. This website provides a directory of some of the projects I'm most proud of from that time, including a machine learning project ("Spirit GPT") I developed by following an online tutorial, as well as several JavaScript projects I worked on through <a href="https://www.theodinproject.com/about">The Odin Project</a>.
+        Hi! My name is Matthew LeBar, and I am a Master's Student in Computer Science at the University of Chicago. This website provides a directory of some of the projects I've worked on in my time here, as well as a couple of JavaScript projects I worked on through <a href="https://www.theodinproject.com/about">The Odin Project</a> before starting at UChicago. My projects here include projects given as class assigments, open-ended projects completed for classes, and a couple self-standing projects. 
       </p></sidebar>
     <!-- I constructed the cards in the HTML since there is just such a large amount of content... easier than adding them in with /src/proj.js, at least for the time being. As I add more projects I may change this-->
+
     <main class="cards">
+
         <div class="card">
-        <h3>Odin-Book</h3>
-        <a href="https://odin-book-project-production-a981.up.railway.app/"
-          ><img src="./book.png" alt="screenshot of odin book project"
-        /></a>
-        <a href="https://odin-book-project-production-a981.up.railway.app/">Webpage</a>
-        <a href="https://github.com/mjlebar/Odin-Book-Project">Codebase</a>
-        <p class="dec">
-            Built with Node, Express, and MongoDB. This was a complicated project with a lot of moving parts - using Faker.js to populate with fake data, using Passport.js and Bcrypt.js to authenticate login information. I'm proud of how it all came together!
-        </p>
-      </div><div class="card">
-        <h3>Spirit-GPT</h3>
-        <a href="https://github.com/mjlebar/spiritGPT/tree/main"
-          ><img src="./spirit.png" alt="screenshot of spirit GPT project"
-        /></a>
-        <a href="https://github.com/mjlebar/spiritGPT/tree/main">Codebase</a>
-        <p class="dec">
-            A machine learning project, replicating the style of 19th century german philosopher Hegel's writing by following a tutorial by Andrej Karpathy (see README for the link to the tutorial). After a few runs on  google colab I got a nice, if not entirely intelligible result.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Zoo Shop</h3>
-        <a href="https://mjlebar.github.io/shopping-cart/"
-          ><img src="./zooshop.png" alt="screenshot of zoo shop project"
-        /></a>
-        <a href="https://mjlebar.github.io/shopping-cart/">Webpage</a>
-        <a href="https://github.com/mjlebar/shopping-cart">Codebase</a>
-        <p class="dec">
-            Built with React Router (like this website!). In this one, I focused on clean, simple design and an easy-to-understand UI. I used lazy-loading to help speed up the page.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Memory Card</h3>
-        <a href="https://mjlebar.github.io/memory-card-project/"
-          ><img src="./memory.png" alt="screenshot of memory card project"
-        /></a>
-        <a href="https://mjlebar.github.io/memory-card-project/">Webpage</a>
-        <a href="https://github.com/mjlebar/memory-card-project">Codebase</a>
-        <p class="dec">
-            This is my second project built in React. This is just a fun, simple game, and it was a great chance to practice React and sharpen my eye for design.
-        </p>
-      </div>
-      <div class="card">
-        <h3>CV Project</h3>
-        <a href="https://mjlebar.github.io/cv-Project/"
-          ><img src="./cv.png" alt="screenshot of CV project"
-        /></a>
-        <a href="https://mjlebar.github.io/cv-Project/">Webpage</a>
-        <a href="https://github.com/mjlebar/cv-Project/">Codebase</a>
-        <p class="dec">
-            This was my first project in React, and a complex one behind the scenes. My focus was on making sure everything functioned exactly as it should - it was difficult to develop code flexible enough to accomodate all the possible inputs (since you could have any number of degrees or jobs), while rigid enough to provide them the right formatting. I'm proud of how it works but hope to give it a nicer design at some point.
-        </p>
-      </div>
-      <div class="card">
-        <h3>To Do List</h3>
-        <a href="https://mjlebar.github.io/todo-project/"
-          ><img src="./todo.png" alt="screenshot of to do list project"
-        /></a>
-        <a href="https://mjlebar.github.io/todo-project/">Webpage</a>
-        <a href="https://github.com/mjlebar/todo-project">Codebase</a>
-        <p class="dec">
-          This is a slightly more complex project - I put this one together with
-          webpack. Took some effort to figure out how to get that to work with
-          github but mission accomplished! Allows for adding and editing todos
-          or projects, and stores everything in local storage (though I am not
-          sure that aspect works with GitHub).
-        </p>
-      </div>
-      <div class="card hidden">
-        <h3>Tic-Tac-Toe</h3>
-        <a href="https://mjlebar.github.io/tic-tac-toe-project/"
-          ><img src="./tic-tac-toe.png" alt="screenshot of tic-tac-toe project"
-        /></a>
-        <a href="https://mjlebar.github.io/tic-tac-toe-project/">Webpage</a>
-        <a href="https://github.com/mjlebar/tic-tac-toe-project">Codebase</a>
-        <p class="dec">
-          This was a tic-tac-toe game I developed in JavaScript. Right now you
-          can play against another player (or yourself). I'm planning to come
-          back and add a CPU at some point!
-        </p>
-      </div>
-      <div class="card">
-        <h3>Etch-A-Sketch</h3>
-        <a href="https://mjlebar.github.io/etch-a-sketch/"
-          ><img src="./etch.png" alt="screenshot of etch-a-sketch project"
-        /></a>
-        <a href="https://mjlebar.github.io/etch-a-sketch/">Webpage</a>
-        <a href="https://github.com/mjlebar/etch-a-sketch">Codebase</a>
-        <p class="dec">
-          A fairly simple but fun JavaScript project - an etch-a-sketch that
-          allows you to recreate the grid in any size you'd like.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Calculator</h3>
-        <a href="https://mjlebar.github.io/Calculator/"
-          ><img src="./calc.png" alt="screenshot of Calculator project"
-        /></a>
-        <a href="https://mjlebar.github.io/Calculator/">Webpage</a>
-        <a href="https://github.com/mjlebar/Calculator">Codebase</a>
-        <p class="dec">
-          A calculator also developed in JavaScript. The main functionality
-          isn't super complicated, but there are a decent number of possible
-          cases you have to look out for (what if operations are chained? what
-          if the number is too long for the calculator? Etc.).
-        </p>
-      </div>
+            <h3>Forthcoming: Quantum Computing in Lean</h3>
+            <p class="dec">
+                This is the next project on my to do list. I've long been curious about Quantum Computing and also wanted to learn Lean through a project. Professor Robert Rand suggested formalizing some of John Watrous's <a href="https://cs.uwaterloo.ca/~watrous/QC-notes/">notes on Quantum Computation</a>, so I will aim to get through several of the key sections. This will definitely be a challenge but I think it'll provide a great way to learn both QC and Lean. My understanding is that formal verification is a powerful tool for QC due to  1) how counterintuitive QC is and 2) the intermediate stages of quantum algorithms not being checkable. All in all, a perfect project for continuing to learn type theory.    
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>WIP: Computing Persistent Homology with NumPy</h3>
+            <a href = "./reports/ADA.pdf">Proposal</a>
+            <a href = "./presentations/ada.pdf">Presentation</a>
+            <p class="dec">
+                This is a work in progress for my "Advanced Data Analytics" class. My goal is to code the algorithm for Persistent Homology, the most significant technique in Algebraic Topology, from scratch in NumPy. I've been curious about both Topological Data Analysis and Algebraic Topology for quite some time, so this provided a great opportunity to dive in. I always appreciate the opportunity to test and develop my understanding of mathematical concepts by coding them up. My code will be included once available. 
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>WIP: Substructural Logics in Agda</h3>
+            <a href = "https://github.com/mlebar-UC/Substructural-Logics-in-Agda">Codebase</a>
+            <p class="dec">
+                This was a summer research project I did with Professor Stuart Kurtz. This was my first foray into the world of programs-as-proofs and dependent type theory, and I absolutely loved it. Specifically, I formally defined several varieties of substructual logic (logics that have non-standard "structural rules", rules that say, e.g., if Z is derivable from X it is derivable from X and Y) and proved a few results both within and about those logics. It was a great way to combine my interests in CS and math, and I found the challenge of representing the organization and relationship of mathematical entities with code really satisfying. I have submitted this code for inclusion in the Agda Standard Library, and am currently in the process of some final revisions before it is officially added. I will update this entry with a link to the standard library, an updated version of just my part of the code, and a README explaining the code when I do.   
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Reinforcement Learning with Verified Rewards for Solving Math Problems</h3>
+            <a href = "./reports/NLP.pdf">Report</a>
+            <p class="dec">
+                For my "Natural Language Processing" class, I wanted to try implementing RLVR. I'm interested in how formal verification can help train LLMs to produce computer programs and mathematical proofs (and of course to verify their outputs after training). I loosely followed Allen AI's <a href="https://arxiv.org/abs/2411.15124">report on Tulu 3</a> to train a Llama 3.1 base model on solving simple math problems using open-source HuggingFace datasets, models, and algorithms (the report includes some technical discussion of the algorithms). I returned to the project after writing the above report, and was able to achieve about 0.25 accuracy after 3 epochs of training. In the original report they achieved 0.44 accuracy over 8-12 epochs so I was quite pleased with that. If compute were cheaper I would've seen what I could get for the full 12 epochs. Code is available upon request.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>Theory of Mind in Multi-Agent Reinforcement Learning</h3>
+            <a href = "./reports/marl.pdf">Report</a>
+            <a href = "./presentations/marl.pdf">Presentation</a>
+            <p class="dec">
+                This was a collaborative final project with another student for my "Algorithmic Game Theory Class." This project did not involve any coding, but was a comprehensive literature review and technical report om a specific issue in Multi-Agent Reinforcement Learning (MARL). I am proudest of sections 2 and 3, which I wrote to provide a very quick but thorough summary of the key concepts of MARL. 
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Training a Robot Arm with Imitation Learning</h3>
+            <a href = "./reports/robotics.pdf">Report</a>
+            <a href = "./presentations/robotics.pdf">Presentation</a>
+            <p class="dec">
+                I collaborated with two classmates in my "Planning, Learning and Estimation for Robotics and AI" class to train a physical robot arm to scoop out beans from a bin. Our main goal was to learn how to integrate the robotics algorithms we'd been using in class with hardware, which presented a lot of challenges. At one point I had to drive about an hour to a MicroCenter to get an extremely specific cord to get our GoPro to work as a camera for the arm. We mostly used HuggingFace's LeRobot repo with some small modifications to train our arm; using ACT imitation learning we successfully trained the arm to emulate our teleoperation to scoop beans.   
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>GoLite Compiler in Go</h3>
+            <p class="dec">
+                I wrote this compiler for a simplified version of the language Go for my "Compilers" course. This was my first time using Go and I enjoyed the language; the project itself is by far the most complex codebase I've developed. I used ANTLR to lex and parse progams in GoLite, before constructing an Abstract Syntax Tree (AST), performing semantic analysis (e.g. ensuring all control-flow paths have a return statement), converting through multiple phases of LLVM representation, and finally producing an executable ARM assembly code file. The intricacy of a compiler even for such a simple language was amazing to me. Code and report available upon request. 
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Unix-Like Shell in C</h3>
+            <p class="dec">
+                This was a project developed in C for my "Intro to Unix System" course. I built a miniature version of a Unix shell, which could execute a limited set of commands (e.g., "ls" or "history"). I used signal processing to manage processes and avoid race conditions. This was a great project for getting a clearer understanding of what goes on underneath the hood of a Unix system, and a fun (if bracing) way to learn C. Code available on request.     
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>Odin-Book</h3>
+            <a href="https://odin-book-project-production-a981.up.railway.app/"
+            ><img src="./images/book.png" alt="screenshot of odin book project"
+            /></a>
+            <a href="https://odin-book-project-production-a981.up.railway.app/">Webpage</a>
+            <a href="https://github.com/mjlebar/Odin-Book-Project">Codebase</a>
+            <p class="dec">
+                Built with Node, Express, and MongoDB. This was a complicated project with a lot of moving parts - using Faker.js to populate with fake data, using Passport.js and Bcrypt.js to authenticate login information.
+            </p>
+        </div>
+    
+        <div class="card">
+            <h3>Zoo Shop</h3>
+            <a href="https://mjlebar.github.io/shopping-cart/"
+                ><img src="./images/zooshop.png" alt="screenshot of zoo shop project"
+            /></a>
+            <a href="https://mjlebar.github.io/shopping-cart/">Webpage</a>
+            <a href="https://github.com/mjlebar/shopping-cart">Codebase</a>
+            <p class="dec">
+                Built with React Router. In this one, I focused on clean, simple design and an easy-to-understand UI. I used lazy-loading to help speed up the page.
+            </p>
+        </div>
+      
     </main>
   </body>
 </html>
