@@ -130,7 +130,7 @@ body {
   
   .card {
     height: 95%;
-    width: 300px;
+    width: 600px;
     margin: 5px;
     background-color: #5e5d5ddd;
     border-radius: 5px;
@@ -149,6 +149,11 @@ body {
   .card p {
     text-align: center;
     padding: 5px;
+    width: 500px;
+  }
+
+  .card a {
+    font-weight: bold
   }
   
   .card img {
