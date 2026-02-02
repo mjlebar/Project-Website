@@ -16,25 +16,30 @@
     </header>
     
     <sidebar><p className="home-info">
-        Hi! My name is Matthew LeBar, and I am a Master's Student in Computer Science at the University of Chicago. This website provides a directory of some of the projects I've worked on in my time here, as well as a couple of JavaScript projects I worked on through <a href="https://www.theodinproject.com/about">The Odin Project</a> before starting at UChicago. My projects here include projects given as class assigments, open-ended projects completed for classes, and a couple self-standing projects. 
+        Hi! My name is Matthew LeBar. This website provides a directory of some of the projects I worked on in my time studying CS at UChicago, as well as a couple of JavaScript projects I worked on through <a href="https://www.theodinproject.com/about">The Odin Project</a> before that. My projects here include projects given as class assigments, open-ended projects completed for classes, and a couple self-standing projects. 
       </p></sidebar>
     <!-- I constructed the cards in the HTML since there is just such a large amount of content... easier than adding them in with /src/proj.js, at least for the time being. As I add more projects I may change this-->
 
     <main class="cards">
 
         <div class="card">
-            <h3>Forthcoming: Quantum Computing in Lean</h3>
+            <h3>Computing Persistent Homology with NumPy</h3>
+            <a href = "./reports/ADA.pdf">Report</a>
+            <a href = "./presentations/ada1.pdf">Initial Presentation</a>
+            <a href = "./presentations/ada2.pdf">Final Presentation</a>
+            <a href = "https://github.com/mlebar-UC/Computing-Persistent-Homology"> Codebase </a>
             <p class="dec">
-                This is the next project on my to do list. I've long been curious about Quantum Computing and also wanted to learn Lean through a project. Professor Robert Rand suggested formalizing some of John Watrous's <a href="https://cs.uwaterloo.ca/~watrous/QC-notes/">notes on Quantum Computation</a>, so I will aim to get through several of the key sections. This will definitely be a challenge but I think it'll provide a great way to learn both QC and Lean. My understanding is that formal verification is a powerful tool for QC due to  1) how counterintuitive QC is and 2) the intermediate stages of quantum algorithms not being checkable. All in all, a perfect project for continuing to learn type theory.    
+                This was my final project for my "Advanced Data Analytics" class. I wrote an algorithm for computing Persistent Homology, a way of measuring the shape of a dataset, in Python. This project was a great way to learn about Topological Data Analysis from both a practical and theoretical standpoint, balancing conceptual understanding of the key ideas of persistent homology with the practical necessities of implementing the algorithm. I am especially proud of the overview of the mathematical background presented in my final report.    
             </p>
         </div>
 
         <div class="card">
-            <h3>WIP: Computing Persistent Homology with NumPy</h3>
-            <a href = "./reports/ADA.pdf">Proposal</a>
-            <a href = "./presentations/ada.pdf">Presentation</a>
+            <h3>Reinforcement Learning with Verified Rewards for Solving Math Problems</h3>
+            <a href = "./reports/NLP.pdf">Report</a>
+            <a href = "./reports/errata.pdf">Errata</a>
+            <a href = ./reports/RLVR.pdf> Presentation</a>
             <p class="dec">
-                This is a work in progress for my "Advanced Data Analytics" class. My goal is to code the algorithm for Persistent Homology, the most significant technique in Algebraic Topology, from scratch in NumPy. I've been curious about both Topological Data Analysis and Algebraic Topology for quite some time, so this provided a great opportunity to dive in. I always appreciate the opportunity to test and develop my understanding of mathematical concepts by coding them up. My code will be included once available. 
+                For my "Natural Language Processing" class, I wanted to try implementing RLVR. I'm interested in how formal verification can help train LLMs to produce computer programs and mathematical proofs (and of course to verify their outputs after training). I loosely followed Allen AI's <a href="https://arxiv.org/abs/2411.15124">report on Tulu 3</a> to train a Llama 3.1 base model on solving simple math problems using open-source HuggingFace datasets, models, and algorithms (the report includes some technical discussion of the algorithms). I returned to the project after writing the above report, and was able to achieve about 0.25 accuracy after 3 epochs of training. In the original report they achieved 0.44 accuracy over 8-12 epochs so I was quite pleased with that. If compute were cheaper I would've seen what I could get for the full 12 epochs. Code is available upon request.
             </p>
         </div>
 
@@ -47,10 +52,9 @@
         </div>
 
         <div class="card">
-            <h3>Reinforcement Learning with Verified Rewards for Solving Math Problems</h3>
-            <a href = "./reports/NLP.pdf">Report</a>
+            <h3>WIP: Quantum Computing in Lean</h3>
             <p class="dec">
-                For my "Natural Language Processing" class, I wanted to try implementing RLVR. I'm interested in how formal verification can help train LLMs to produce computer programs and mathematical proofs (and of course to verify their outputs after training). I loosely followed Allen AI's <a href="https://arxiv.org/abs/2411.15124">report on Tulu 3</a> to train a Llama 3.1 base model on solving simple math problems using open-source HuggingFace datasets, models, and algorithms (the report includes some technical discussion of the algorithms). I returned to the project after writing the above report, and was able to achieve about 0.25 accuracy after 3 epochs of training. In the original report they achieved 0.44 accuracy over 8-12 epochs so I was quite pleased with that. If compute were cheaper I would've seen what I could get for the full 12 epochs. Code is available upon request.
+                This is the next project on my to do list. I've long been curious about Quantum Computing (QC) and also wanted to learn Lean through a project. Professor Robert Rand suggested formalizing some of John Watrous's <a href="https://cs.uwaterloo.ca/~watrous/QC-notes/">notes on Quantum Computation</a>, so I will aim to get through several of the key sections. My understanding is that formal verification is a powerful tool for QC due to 1) how counterintuitive QC is and 2) the intermediate stages of quantum algorithms not being checkable. All in all, a perfect project for continuing to learn type theory. I am currently in the process of familiarizing myself with Lean and fundamentals of QC separately before moving to formalization.     
             </p>
         </div>
 
@@ -60,7 +64,7 @@
             <a href = "./reports/marl.pdf">Report</a>
             <a href = "./presentations/marl.pdf">Presentation</a>
             <p class="dec">
-                This was a collaborative final project with another student for my "Algorithmic Game Theory Class." This project did not involve any coding, but was a comprehensive literature review and technical report om a specific issue in Multi-Agent Reinforcement Learning (MARL). I am proudest of sections 2 and 3, which I wrote to provide a very quick but thorough summary of the key concepts of MARL. 
+                This was a collaborative final project with another student for my "Algorithmic Game Theory Class." This project did not involve any coding, but was a comprehensive literature review and technical report om a specific issue in Multi-Agent Reinforcement Learning (MARL). I am proudest of sections 2 and 3, which I wrote to provide a brief but thorough summary of the key concepts of MARL. 
             </p>
         </div>
 
